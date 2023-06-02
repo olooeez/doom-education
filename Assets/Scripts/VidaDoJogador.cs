@@ -15,6 +15,7 @@ public class VidaDoJogador : MonoBehaviour {
     public void MachucarJogador(int danoParaReceber) {
         if (GameManager.instance.jogadorEstaVivo) {
             vidaAtualDoJogador -= danoParaReceber;
+            EfeitosSonoros.instance.TocarDanoDoJogador();
             textoDaVidaDoJogador.text = "Vida\n" + vidaAtualDoJogador;
         }
 

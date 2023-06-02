@@ -33,12 +33,16 @@ public class AtaqueDoJogador : MonoBehaviour {
 
                     if (localAtingido.transform.gameObject.CompareTag("Inimigo")) {
                         localAtingido.transform.gameObject.GetComponentInParent<Inimigo>().MachucarInimigo(danoParaDar);
+                        EfeitosSonoros.instance.TocarDanoDoInimigo();
                     }
                 }
 
                 municaoAtual -= 1;
+                EfeitosSonoros.instance.TocarAtaqueDoJogador();
 		        textoDaMunicao.text = "Munição\n" + municaoAtual;
 		        animatorDaArma.SetTrigger("Arma Atirando");
+            } else {
+                EfeitosSonoros.instance.TocarSemMunicao();
             }
         }
     }

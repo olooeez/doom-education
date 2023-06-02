@@ -15,18 +15,22 @@ public class ItemColetavel : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")) {
             if (itemDeMunicao) {
                 other.gameObject.GetComponent<AtaqueDoJogador>().DarMunicao(municaoParaDar);
+                EfeitosSonoros.instance.TocarMunicao();
             }
 
             if (itemDeVida) {
                 other.gameObject.GetComponent<VidaDoJogador>().DarVida(vidaParaDar);
+                EfeitosSonoros.instance.TocarVida();
             }
 
             if (itemChavePrateada) {
                 GameManager.instance.temChavePrateada = true;
+                EfeitosSonoros.instance.TocarChave();
             }
 
             if (itemChaveDourada) {
                 GameManager.instance.temChaveDourada = true;
+                EfeitosSonoros.instance.TocarChave();
             }
 
             Destroy(this.gameObject);

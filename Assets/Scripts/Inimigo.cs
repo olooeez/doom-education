@@ -75,6 +75,7 @@ public class Inimigo : MonoBehaviour {
         if (!inimigoJaAtacou) {
             inimigoPodeAndar = false;
             animador.SetTrigger("Atacando");
+            EfeitosSonoros.instance.TocarAtaqueDoInimigo();
             Instantiate(projetilDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
             inimigoJaAtacou = true;
             Invoke(nameof(ResetarAtaqueDoInimigo), tempoEntreOsAtaques);
