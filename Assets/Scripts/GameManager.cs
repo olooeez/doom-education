@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
     public GameObject painelDePausa;
+    public GameObject painelDeGameOver;
     public bool jogadorEstaVivo;
     public bool temChavePrateada;
     public bool temChaveDourada;
@@ -49,7 +50,11 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameOver() {
-        jogadorEstaVivo = false;
         FindObjectOfType<Musicas>().TocarMusicaGameOver();
+        Time.timeScale = 0f;
+        painelDeGameOver.SetActive(true);
+        jogadorEstaVivo = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
