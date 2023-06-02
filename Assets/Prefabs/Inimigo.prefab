@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2671318283796836052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.64, y: 1.52, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -210,7 +210,7 @@ MonoBehaviour:
   inimigoPodeAndar: 0
   tempoEntreOsPontos: 3
   tempoAtual: 3
-  distanciaParaAtacar: 5
+  distanciaParaAtacar: 4
   tempoEntreOsAtaques: 1
   inimigoJaAtacou: 0
   vidaMaximaDoInimigo: 9
