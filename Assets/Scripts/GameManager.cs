@@ -20,6 +20,6 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver() {
         jogadorEstaVivo = false;
-        Debug.Log("Game Over");
+        FindObjectOfType<Musicas>().TocarMusicaGameOver();
     }
 }
