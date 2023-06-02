@@ -25,6 +25,7 @@ public class ControleDoJogador : MonoBehaviour {
         Vector3 movimentoHorizontal = transform.up * -comandosDoTeclado.x;
         Vector3 movimentoVertical = transform.right * comandosDoTeclado.y;
         body.velocity = (movimentoHorizontal + movimentoVertical) * velocidadeDoJogador;
+        body.velocity.Normalize();
 
         if (body.velocity.magnitude == 0) {
             animatorDoPainelDaArma.Play("Animação Jogador Parado");
