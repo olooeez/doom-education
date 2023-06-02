@@ -37,7 +37,8 @@ public class Inimigo : MonoBehaviour {
     private void MovimentarInimigo() {
         if (inimigoEstaVivo && inimigoPodeAndar) {
             transform.position = Vector2.MoveTowards(transform.position, pontosParaCaminhar[pontoAtual].position, velocidadeDoInimigo * Time.deltaTime);
-            
+            transform.position += new Vector3(0f, 0f, -0.7f);
+
             if (transform.position.y != pontosParaCaminhar[pontoAtual].position.y) {
                 animador.SetTrigger("Andando");
             }
