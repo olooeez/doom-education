@@ -16,8 +16,10 @@ public class ControleDoJogador : MonoBehaviour {
     }
 
     void Update() {
-        MovimentarJogador();
-        GirarCamera();
+        if (!GameManager.instance.jogoPausado && GameManager.instance.jogadorEstaVivo) {
+            MovimentarJogador();
+            GirarCamera();
+        }
     }
 
     private void MovimentarJogador() {

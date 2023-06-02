@@ -19,7 +19,9 @@ public class AtaqueDoJogador : MonoBehaviour {
     }
 
     void Update() {
-        Atirar();
+        if (!GameManager.instance.jogoPausado && GameManager.instance.jogadorEstaVivo) {
+            Atirar();
+        }
     }
 
     private void Atirar() {
