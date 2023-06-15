@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour {
     public void PausarJogo() {
         Time.timeScale = 0f;
         painelDePausa.SetActive(true);
+        Portas.instance.painelAbrirPorta.SetActive(false);
         jogoPausado = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour {
     public void GameOver() {
         FindObjectOfType<Musicas>().TocarMusicaGameOver();
         Time.timeScale = 0f;
+        Portas.instance.painelAbrirPorta.SetActive(false);
         painelDeGameOver.SetActive(true);
         jogadorEstaVivo = false;
         Cursor.visible = true;

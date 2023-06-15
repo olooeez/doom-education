@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Portas : MonoBehaviour {
+    public static Portas instance;
     public Animator porta;
     public Collider2D colisorDaPorta;
+    public GameObject painelAbrirPorta;
     public bool portaNormal;
     public bool portaPrateada;
     public bool portaDourada;
     public bool portaFechada;
+    private bool abrirPorta;
+
+    void Awake() {
+        instance = this;
+    }
 
     void Start() {
         portaFechada = true;
+        abrirPorta = false;
     }
 
     void Update() {
-
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (painelAbrirPorta.activeSelf) {
+                abrirPorta = true;
+            }
+        }
     }
 
     private void AbrirPorta() {
@@ -31,7 +43,15 @@ public class Portas : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && portaFechada) {
+        if (other.gameObject.CompareTag("Player")) {
+            painelAbrirPorta.SetActive(true);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Player") && abrirPorta) {
+            painelAbrirPorta.SetActive(false);
+
             if (portaNormal) {
                 AbrirPorta();
             }
@@ -43,6 +63,8 @@ public class Portas : MonoBehaviour {
             if (portaDourada && GameManager.instance.temChaveDourada) {
                 AbrirPorta();
             }
+
+            abrirPorta = false;
         }
     }
 
@@ -50,5 +72,8 @@ public class Portas : MonoBehaviour {
         if (other.gameObject.CompareTag("Player") && !portaFechada) {
             FecharPorta();
         }
+
+        painelAbrirPorta.SetActive(false);
+        abrirPorta = false;
     }
 }
