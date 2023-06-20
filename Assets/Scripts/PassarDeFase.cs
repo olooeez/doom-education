@@ -18,6 +18,8 @@ public class PassarDeFase : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player")) {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             StartCoroutine(CarregarNovaFase());
         }
     }
