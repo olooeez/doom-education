@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1247127579492820146
 SpriteRenderer:
@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transicaoDeFase: {fileID: 0}
-  proximaFase: Quiz de Base
+  proximaFase: Quiz da Fase 1
   tempoParaEsperar: 1.6

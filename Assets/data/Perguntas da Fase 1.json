@@ -1,0 +1,44 @@
+{
+    "Lista": [
+      {
+        "pergunta": "Quanto é 7 + 9 - 4?",
+        "respostaCerta": "12",
+        "respostaErradaA": "5",
+        "respostaErradaB": "16",
+        "respostaErradaC": "10",
+        "qtdRespostas": 4
+      },
+      {
+        "pergunta": "Quanto é 14 - 3 + 8?",
+        "respostaCerta": "19",
+        "respostaErradaA": "9",
+        "respostaErradaB": "21",
+        "respostaErradaC": "15",
+        "qtdRespostas": 4
+      },
+      {
+        "pergunta": "Quanto é 10 + 5 - 7?",
+        "respostaCerta": "8",
+        "respostaErradaA": "3",
+        "respostaErradaB": "12",
+        "respostaErradaC": "6",
+        "qtdRespostas": 4
+      },
+      {
+        "pergunta": "Quanto é 20 - 10 + 15?",
+        "respostaCerta": "25",
+        "respostaErradaA": "5",
+        "respostaErradaB": "35",
+        "respostaErradaC": "30",
+        "qtdRespostas": 4
+      },
+      {
+        "pergunta": "Quanto é 8 + 12 - 6?",
+        "respostaCerta": "14",
+        "respostaErradaA": "10",
+        "respostaErradaB": "18",
+        "respostaErradaC": "16",
+        "qtdRespostas": 4
+      }
+    ]
+}
