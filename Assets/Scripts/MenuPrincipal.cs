@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour {
     public string primeiraFase;
+    public string areaProfessor;
 
     void Start() {
         Time.timeScale = 1f;
@@ -18,5 +19,9 @@ public class MenuPrincipal : MonoBehaviour {
 
     public void SairDoJogo() {
         Application.Quit();
+    }
+
+    public void AreaDoProfessor() {
+        SceneManager.LoadScene(areaProfessor);
     }
 }

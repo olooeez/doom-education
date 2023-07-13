@@ -8,15 +8,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c2fdca93e723e6d7f934b5f186861698
+  - enabled: 1
+    path: Assets/Scenes/Editar Fase.unity
+    guid: aed631841098e2e2d89f6dc57dc85887
+  - enabled: 1
+    path: Assets/Scenes/Editar Quiz da Fase 1.unity
+    guid: 46750ed4038f6e825a133d6b4eef0340
+  - enabled: 1
+    path: Assets/Scenes/Editar Quiz da Fase 2.unity
+    guid: 2b500ec5ab6a962c69237c81183bc738
+  - enabled: 1
+    path: Assets/Scenes/Editar Quiz da Fase 3.unity
+    guid: eab75d103875acd1fbb1f912db0287e2
   - enabled: 0
     path: Assets/Scenes/Fase de Base.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Quiz de Base.unity
     guid: 4322238dc1e961d439a91d0368dbcabc
-  - enabled: 0
-    path: Assets/Scenes/Set the Quis Scene.unity
-    guid: 4b88e710c53927b228a15566f57d668e
   - enabled: 1
     path: Assets/Scenes/Fase 1.unity
     guid: 827abd73056ffe78986f1d2378f31480
@@ -38,10 +47,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tela de Vitoria.unity
     guid: b6df3bf706f6157a5b0d812b34196cf3
-  - enabled: 0
-    path: Assets/Scenes/Fase 4.unity
-    guid: d85d931834bedb6eebf7171508563131
-  - enabled: 0
-    path: Assets/Scenes/Quiz da Fase 4.unity
-    guid: 1965bde18bce8a43098e15f5d3da07f4
   m_configObjects: {}

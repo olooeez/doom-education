@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -579,6 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PainelRespostas: {fileID: 0}
   Pergunta: {fileID: 0}
+  quantidadePerguntas: 10
   buttons: []
   buttonCerto: {fileID: 0}
   buttonErrado: {fileID: 0}
@@ -586,13 +587,13 @@ MonoBehaviour:
   perguntasSelecionadas: []
   respostas: []
   ProximoLevel: 
-  fileName: Perguntas
+  fileName: Perguntas da Fase 3
   perguntaUIPrefab: {fileID: 6209415566889687849, guid: 3ae593d9c9620ba46b1a997b5ae2a60d, type: 3}
   painel: {fileID: 212083606}
   novaPerguntaBtn: {fileID: 654368363}
   salvarBtn: {fileID: 216297762}
   voltarBtn: {fileID: 1609913514}
-  sceneToLoad: Quis Scene
+  sceneToLoad: Editar Fase
   scroll: {fileID: 469294809}
 --- !u!1 &374116895
 GameObject:
@@ -964,9 +965,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1887,7 +1896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd51af6442ca67142950457cacf69575, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d4cf04e6a03704eb6542c45a99947c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2081,6 +2090,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
